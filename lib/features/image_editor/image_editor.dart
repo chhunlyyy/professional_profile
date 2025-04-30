@@ -37,11 +37,15 @@ class _ImageEditorWidgetState extends State<ImageEditorWidget> {
         settings: const PainterSettings(
           freeStyle: FreeStyleSettings(
             color: Colors.red,
-            strokeWidth: 3,
+            strokeWidth: 10,
             mode: FreeStyleMode.none,
           ),
           text: TextSettings(
-            textStyle: TextStyle(fontSize: 24, color: Colors.black),
+            textStyle: TextStyle(
+              fontSize: 150, // Match this with editorStyle below
+              color: Colors.red,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       );
@@ -72,8 +76,8 @@ class _ImageEditorWidgetState extends State<ImageEditorWidget> {
       text: 'Write Here',
       position: centerPosition,
       style: const TextStyle(
-        fontSize: 200, // Increased font size
-        color: Colors.black,
+        fontSize: 150,
+        color: Colors.red,
         fontWeight: FontWeight.bold,
       ),
     );
