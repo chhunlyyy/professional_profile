@@ -30,7 +30,7 @@ class ProfileDetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Profile Image
-            if (profile.imagePath != null) Hero(tag: 'profile', child: UIHelper.userProfileImage(context, profile.imagePath!)),
+            if (profile.imagePath != null) Hero(tag: profile.id, child: UIHelper.userProfileImage(context, profile.imagePath!)),
             const SizedBox(height: 12),
             // Name and Role
             _buildTitleText(context, profile.name, isMainTitle: true),

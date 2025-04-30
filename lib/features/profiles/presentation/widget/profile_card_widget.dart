@@ -42,7 +42,7 @@ class ProfileCardWidget extends StatelessWidget {
                   if (profile.imagePath != null)
                     Center(
                       child: Hero(
-                        tag: 'profile',
+                        tag: profile.id,
                         child: SizedBox(width: 60, height: 60, child: UIHelper.userProfileImage(context, profile.imagePath!)),
                       ),
                     ),
